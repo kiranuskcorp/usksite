@@ -8,8 +8,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="keywords" content="slideman, sliderman.js, javascript slider, jquery, slideshow, effects" />
+	<meta name="description" content="Sliderman.js - will do all the sliding for you :)" />
+	<style type="text/css">
+		* { margin: 0; outline: none; }
+		body { background-color: #444444; }
+		.c { clear: both; }
+		#wrapper { margin: 0 auto; padding: 0 40px 60px 40px; width: 960px; }
+		h2 { padding: 20px 0 10px 0; font-size: 24px; line-height: 40px; font-weight: normal; color: #adc276; text-shadow: 0 1px 3px #222222; }
+	</style>
 
-<title>Usk Corp</title>
+	<!-- sliderman.js -->
+	<script type="text/javascript" src="js/sliderman.1.3.7.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sliderman.css" />
+	<!-- /sliderman.js -->
+	
+<title>USK Corp</title>
 <link rel="shortcut icon" href="./images/favicon.png" />
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -500,7 +516,7 @@ height: 85px;
 		<footer>
 			<div class="row">
 				<div class="col-lg-12">
-					<p>Copyright &copy; Usk Corp 2015</p>
+					<p><center>Copyright &copy; Usk Corp 2015</center></p>
 				</div>
 			</div>
 		</footer>
@@ -518,6 +534,8 @@ height: 85px;
 	<script>
 		$('.carousel').carousel({
 			interval : 5000
+			//scroll: 1
+			//vertical: true
 		//changes the speed
 		})
 	</script>
@@ -526,13 +544,69 @@ height: 85px;
 		</a> <a class="right carousel-control" href="#myCarousel"
 			data-slide="next"> <span class="icon-next"></span>
 		</a>
-</body>
+	<div id="wrapper">
+
+		<div id="examples_outer">
+			
+
+			<div id="slider_container_3">
+
+				<div id="SliderName_3" class="SliderName_3">
+					<p>We are glad to inform you that our company has decided to 
+					establish a long term and productive relationship with you in 
+					the coming future. We would like to leverage your technical expertise 
+					in Java/J2EE technologies in providing corporate training to our consultants.
+					<p style="align:right">
+					<b>Centillionz</b><br/>
+					Satish Moturi, Operations Manager.</p></p>
+					<p>We acknowledge your deep understanding of Java/J2EE technologies. 
+					You really are excellent. We want you to know that we are extremely pleased with
+					the quality of service you provide. Dataquest is glad to recommend you to others
+					because of our satisfaction with your service. We would like to especially mention
+					that your extended help in terms providing required job on job support is greatly
+					appreciated. Each of our consultants has expressed enormous confidence in your 
+					training and has applauded your technical abilities. 
+					<p style="align:right">
+					<b>Dataquest</b><br/>
+					Madhu Bolla, Vice President</p>
+					</p>
+					<p>The last 6 months of your partnership with Promatrix Corp has been both fruitful
+					and productive for the organisation. In a very short span you have built a strong trust
+					and professional relationship with the company. Your performance as a trainer and as 
+					a technical consultant has been remarkable. Your timely feedback on the various process
+					areas has been excellent. It is our pleasure to inform you that the company is hoping to
+					take this relationship to the next level by providing much more opportunities and by
+					thrusting additional technical responsibilities.
+					<p style="align:right">
+					Promatrix<br/>
+					Kannan Govindrajan, CFO</p>
+					</p>
+					<img src="images/centillionz1.png" width="300" height="330" alt="" title="" />
+					<img src="images/dataquest.png" width="300" height="330" alt="" title="" />
+					<img src="images/promatix.png" width="300" height="330" alt="" title="" />
+				</div>
+				<div class="c"></div>
+
+				<script type="text/javascript">
+
+					demo3Effect1 = {name: 'myEffect31', top: true, move: true, duration: 400};
+					demo3Effect2 = {name: 'myEffect32', right: true, move: true, duration: 400};
+					demo3Effect3 = {name: 'myEffect33', bottom: true, move: true,  duration: 400};
+					demo3Effect4 = {name: 'myEffect34', left: true, move: true, duration: 400};
+				
+					effectsDemo3 = [demo3Effect3];
+
+					var demoSlider_3 = Sliderman.slider({container: 'SliderName_3', width: 300, height: 330, effects: effectsDemo3, display: {autoplay: 3000}});
+				</script>
+
+				<div class="c"></div>
+			</div>
+			<div class="c"></div>
+		</div>
+
+		<div class="c"></div>
+	</div>
+	
+	</body>
 
 </html>
-
-
-
-
-
-
-
